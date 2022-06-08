@@ -6,7 +6,7 @@ dotenv.config();
 // console.log(process.env);
 //environmental variable
 const app = express();
-const PORT = 1515;
+const PORT =process.env.PORT;
 
 //middleware->intercept->converting body to json
 app.use(express.json()); //inbuilt  middleware
